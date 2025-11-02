@@ -1,0 +1,1 @@
+string which i want to encode
