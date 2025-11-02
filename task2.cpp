@@ -3,6 +3,7 @@
 #include <vector>
 #include <cstring>
 #include <cstdint>
+#include <iomanip>
 
 using namespace std;
 
@@ -29,7 +30,7 @@ struct RC5 {
     }
 
     void keyExpansion(const uint8_t* key, size_t keyLen) {
-        size_t u = W / 8;                  
+        size_t u = W / 8;
         size_t c = (keyLen + u - 1) / u;
 
         vector<uint32_t> L(c, 0);
